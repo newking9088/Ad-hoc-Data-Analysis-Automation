@@ -1,0 +1,10 @@
+pandas
+numpy
+seaborn
+matplotlib
+awscli
+tqdm
+boto3
+bz2file
+jsonlib-python3
+pingouin
