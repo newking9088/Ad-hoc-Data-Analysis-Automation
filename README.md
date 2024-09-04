@@ -76,7 +76,7 @@ pip install boto3 pandas tqdm
 **Returns:** A `pd.DataFrame` with discharge energy data.
 
 #### ttest
-**Purpose:** Performs a t-test for A/B testing, comparing two samples (control and experiment) to return the p-value, practical impact factor (Cohen's d), and the power of the test.
+**Purpose:** Performs a t-test for A/B testing, comparing two samples (control and treatment/experiment) to return the p-value, practical impact factor (Cohen's d), and the power of the test ($1 - \beta$).
 
 **Parameters:**
 - `sample1 (pd.Series, np.array, tuple, list)`: The first array-like or input sample.
@@ -87,7 +87,7 @@ pip install boto3 pandas tqdm
 **Returns:** A `pd.DataFrame` with the following statistical inference parameters:
 - `p-val`: The p-value of the test.
 - `cohen-d`: The practical impact factor.
-- `power`: The power of the test.
+- `power`: The power of the test. Power > 0.8 is desirable.
 - `BF10`: The Bayesian Factor supporting the alternative hypothesis.
 - `CI95%`: The 95% confidence interval.
 
