@@ -17,7 +17,7 @@ We use boto3 to pull data from AWS Redshift using Python and SQL. The pipeline l
 - json
 - pingouin
 
-If you have a running Python 3.x environment, you can simply use `pip install -r requirements.txt` to install all the required dependencies.
+If you have a running Python 3.x environment, you can simply use `pip install -r requirements.txt` to install all the required dependencies. By using this installation method, you can skip the instructions for installing individual dependencies mentioned throughout the document.
   
 ## Files and Directories
 
@@ -374,9 +374,8 @@ pip install boto3 pandas tqdm
 
 ### jupyter notebooks/adhoc_worksheet.ipynb
 
-This section demonstrates how to use the provided methods for analyzing and visualizing cycloid data in a Jupyter Notebook.
+This section demonstrates how to use the methods described in `adhoc class` for analyzing and visualizing cycloid data in a Jupyter Notebook.
 
-**User Input**
 ```python
 # User input
 doe_number = 'MTSOWPhase2_Pack25CValidation'  # Provide DOE as int or str
@@ -395,7 +394,7 @@ dcir = adhoc.get_dcir(dfc)
 discharge_energy = adhoc.get_discharge_energy(dfc)
 ```
 
-Please refer to adhoc_worksheet.ipynb to learn how to implement the available methods for automating ad-hoc data analysis. The notebook provides detailed explanations, examples, and outputs to guide you through the process.
+Please refer to adhoc_worksheet.ipynb to learn how to implement all other available methods for automating ad-hoc data analysis. The notebook provides detailed explanations, examples, and outputs to guide you through the process.
 
 ### jupyter notebooks/dump_data_into_psql.ipynb
 
