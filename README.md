@@ -16,6 +16,8 @@ We use boto3 to pull data from AWS Redshift using Python and SQL. The pipeline l
 - bz2
 - json
 - pingouin
+
+If you have a running Python 3.x environment, you can simply use `pip install -r requirements.txt` to install all the required dependencies.
   
 ## Files and Directories
 
