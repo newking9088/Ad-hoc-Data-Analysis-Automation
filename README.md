@@ -32,6 +32,7 @@ To use this function, ensure you have the following Python libraries installed:
 You can install `pandas` using pip:
 ```bash
 pip install pandas
+```
 
 ### python files/CycloidConnector.py
 `VWCycloid` is a Python class designed to interact with an AWS Redshift database to retrieve and process cycloid data. It uses the `boto3` library to connect to Redshift and `pandas` to handle data manipulation.
@@ -45,6 +46,7 @@ To use this class, ensure you have the following Python libraries installed:
 You can install these libraries using pip:
 ```bash
 pip install boto3 pandas tqdm
+```
 
 ### python files/adhoc_analysis.py
 ` adhoc` is a powerful Python class crafted to streamline and automate daily ad-hoc analysis requests from both internal and external clients. It offers a suite of methods designed to efficiently handle and simplify these tasks.
@@ -479,7 +481,7 @@ Sometimes we need to dump data into our Redshift database from an external sourc
 It contains some detailed data cleaning and preprocessing before doing CapacityTimeUncertainty calculation.
 
 ### jupyter notebooks/pack_voltage_capacity_per_current_step.ipynb
-It details why we should use different error limits on different regime of applied current while cycling a battery.
+It details why we should use different error limits on different regime of applied current for charge time and capacity uncertainty estimation when cycling a battery.
 
 ### data
 This dataset includes both raw and cleaned data for battery cycling, intended for demonstration purposes. Please note that the data has been dummified and synthesized, and does not represent real-world data.
